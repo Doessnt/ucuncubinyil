@@ -57,11 +57,17 @@ print("En küçük elmanı\n >>>>", min(liste3) )
 print("eN büyük elmanı\n >>>>", max(liste3))
 
 print(sum(liste3)) #listenin indexlerini toplama
-"""
+
 
 numbers = [i for i in range(0, 100, 2)]
 
 answer = sum(numbers) / len(numbers)
 print(answer)
 
+"""
 
+#Liste kopyalama ve Çoğaltama işlmeleri
+
+liste1 = [1, 2, 3, 4, 5, 6, 7, 9]
+liste2 = liste1 #bu işlem ram'de aynı adresi gösterir
+print(liste2)
