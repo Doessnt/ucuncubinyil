@@ -53,7 +53,7 @@ print(liste3)
 
 #Listenin en büyük ve en küçük elmanı bulma 
 
-print("En küçük elmanı\n >>>>", min(liste3) )
+print("En küçük elmanı\n >>>>", min(liste3))
 print("eN büyük elmanı\n >>>>", max(liste3))
 
 print(sum(liste3)) #listenin indexlerini toplama
@@ -64,10 +64,47 @@ numbers = [i for i in range(0, 100, 2)]
 answer = sum(numbers) / len(numbers)
 print(answer)
 
-"""
+
 
 #Liste kopyalama ve Çoğaltama işlmeleri
 
 liste1 = [1, 2, 3, 4, 5, 6, 7, 9]
-liste2 = liste1 #bu işlem ram'de aynı adresi gösterir
-print(liste2)
+liste2 = liste1 #Bu işlem ram'de aynı adresi gösterir.
+
+liste3 = liste1.copy # Bu fonksion ram'de yeni bir alan içinde oluşturulur.
+
+#Listenin ram'de durduğu yeri öğrenme
+
+print("Lıste1'in ram adresi :", id(liste1))
+print("Lıste3'in ram adresi :", id(liste3))
+
+
+
+#Üç boyutlu listeler
+
+cok_boyutluLıste = [[1, 2, 3, 4, 5], [10, 9, 8, 7, 6]]
+
+print(cok_boyutluLıste[0][1]) #1.istenin 1.elemanına
+print(cok_boyutluLıste[1][2]) #2.listenin 2.elemanına
+
+#
+#Alıştırmalar 
+"""
+
+import random
+print("Oyuna Hoşgeldini....")
+i = 0
+while i < 20:
+    sans = []
+    sans.append(random.randint(1, 100))
+    i += 1
+y = 0
+while y < 3:
+    user = int(input("Lütfen sayı giiniz\n >>>>"))
+    aı = random.choice(sans)
+    if aı in user:
+        print("Doğru")
+    else: 
+        print("Yanlış")
+
+
