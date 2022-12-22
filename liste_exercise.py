@@ -12,6 +12,8 @@ if user2 in liste:
 else:
     print("Bulamadım")
 """
+""""""
+"""
 liste = []
 
 breakk = -1
@@ -36,3 +38,9 @@ print(list2)
 #print(liste)
 #liste.reverse()
 #print(liste)
+"""
+
+#for i in range(1, 10):
+#    print(str(i)*i)
+
+
