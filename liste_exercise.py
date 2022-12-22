@@ -38,9 +38,29 @@ print(list2)
 #print(liste)
 #liste.reverse()
 #print(liste)
-"""
+
 
 #for i in range(1, 10):
 #    print(str(i)*i)
+
+
+
+liste = []
+for i in range(15):
+    j = random.randint(1, 50)
+    liste.append(j)
+
+
+toplam = 0
+
+for i in liste:
+    toplam += i #Listenin içindekileri toplama
+    toplam2 = toplam // len(liste) #Ortalamasını alma 
+    toplam3 = toplam*i+1 #Faktoriyel hesaplama
+print(toplam)
+print(toplam2)
+print(toplam3)
+
+"""
 
 
