@@ -1,1 +1,1 @@
-# ucuncubinyil da python dersi notları istediğiniz gibi kullanmakta serbestsin iyi kodlamalar.
+# ucuncubinyil da python dersi notları istediğin gibi kullanmakta serbestsin iyi kodlamalar.
