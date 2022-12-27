@@ -57,7 +57,7 @@ while True:
     elif user == 1:
         userSearch = input("Lütfen aradığınız kelimeyi giriniz\n>>>>")
         if userSearch in sozluk:
-            print(userSearch)
+            print(sozluk[userSearch])
         else:
             print("Aradığınız kelime darcığımızı geliştrimek istermsiiniz ? Y/N\n")
             userBool = input("?")
