@@ -72,7 +72,7 @@ while True:
         sozluk.pop(userDelete)
         print("Silindi")
         print(sozluk)
-    elif user == 3: # Bütün sözlüğü yazdırma
+    elif user == 3: # Bütün sözlüğü yazdırmaa
         print(sozluk)
  
 
