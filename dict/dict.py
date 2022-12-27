@@ -6,7 +6,7 @@ sozluk = {"Color1":"Red", "Color2":"White", "Color3": "Blue"}
 print(sozluk["Color1"])
  
 print(sozluk.get(["Color1"]))
-"""
+
 
 sozluk = {"1":"Ahmet", "2": "Bartu", 3:5}
 
@@ -19,4 +19,4 @@ print("Ahmet" in sozluk.values()) # Değerlerin içinde "Ahmet" varmı ?
 
 sozluk["11"] = "Eylül"
 print(sozluk)
-
+"""
