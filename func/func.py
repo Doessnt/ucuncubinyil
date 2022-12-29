@@ -41,5 +41,26 @@ def toplam(number1, number2 = 10):
     print(result)
 
 toplam(10)
+
+
+
+# Çoklu parametreler
+def example(*numbers):
+    for i in numbers:
+        print(i)
+
+example(1,4,5, 13131232131, 31231232131,41423534523534)
+
+
+
+def example(*number):
+    toplam = 0
+    for i in number:
+        toplam += i
+    print(toplam)
+
+example(1,4,5, 13131232131, 31231232131,41423534523534)
 """
+
+
 

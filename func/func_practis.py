@@ -13,6 +13,7 @@ def example():
         print(number2 * number1)
 example()
 
+##################################################
 
 def example1(sting, number):
     print("Welcome to Los Pollos Hermanos family")
@@ -20,7 +21,8 @@ def example1(sting, number):
     print(sting*number)   
 
 example1("Ali\n", 13)
-"""
+
+##################################################
 
 def example2(how_many_chracter, user, liste):
     print("\n\nWelcome to Los Pollos Hermanos family\n\n")
@@ -37,8 +39,40 @@ user = ""
 
 example2(how_many_chracter, user, liste)    
 
+##################################################
+
+def example3(user, user_bool = 0):
+    if user % 2 == user_bool:
+        print("Çift")
+    else:
+        print("Tek")
+
+user = int(input("Lütfen sayı giriniz\n>>>> "))
+
+example3(user)
+    
+
+##################################################
+
+def example4(liste):
+    for i in liste:
+        if i % 2 == 0:
+            print(f"{i} bir çift sayıdır")
+        else:
+            print(f"{i} bir tek sayıdır")
+
+liste = [1, 2, 3, 4, 5]
+example4(liste)            
+    
 
 
+##################################################
 
+def example5(en, boy, harf):
+    for i in range(en):
+        print(harf*boy)
+        
+    
+example5(14,2,"o")
 
-
+"""
