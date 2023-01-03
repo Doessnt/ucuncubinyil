@@ -61,7 +61,7 @@ def example(*number):
     print(toplam)
 
 example(1,4,5, 13131232131, 31231232131,41423534523534)
-"""
+
 ######################Return###########################
 #def pow1(nunber1, up):
 #    return nunber1 ** up
@@ -80,6 +80,6 @@ def example1(x, y, z):
     return example0(x, example0(y, z))
 
 print(example1(20, 15, 21))
-
+"""
 
 
