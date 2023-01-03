@@ -5,7 +5,7 @@ liste = ["Araba çocuk unuttum", "Su güzel bir şey", "Bugün yorgun uyandim"]
 """
 liste = ["Araba çocuk unuttum", "Su güzel bir şey", "Bugün yorgun uyandim", "test"]
 
-def akp (user_select, user_change, user_change2, liste):
+def alphabet_change(user_select, user_change, user_change2, liste):
  name = liste[user_selcet]
  
  liste[user_selcet] = name.replace(user_change, user_change2)
@@ -19,7 +19,7 @@ user_change = input(f"{liste[user_selcet]}\n Lütfen Bu listede değiştirmek is
 
 user_change2 = input(f"{liste[user_selcet]}\n Lütfen Bu listede değiştireceğini harfleri yaziniz\n >>>>")
 
-akp(user_selcet, user_change, user_change2, liste)
+alphabet_change(user_selcet, user_change, user_change2, liste)
 
 
 
