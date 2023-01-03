@@ -6,11 +6,12 @@ liste = ["Araba çocuk unuttum", "Su güzel bir şey", "Bugün yorgun uyandim"]
 liste = ["Araba çocuk unuttum", "Su güzel bir şey", "Bugün yorgun uyandim", "test"]
 
 def alphabet_change(user_select, user_change, user_change2, liste):
- name = liste[user_selcet]
+  
+  name = liste[user_selcet]
  
- liste[user_selcet] = name.replace(user_change, user_change2)
+  liste[user_selcet] = name.replace(user_change, user_change2)
 
- print(liste)
+  print(liste)
     
 
 user_selcet = int(input(f"{liste}\n Lütfen listedeki değiştirmek istedeğiniz liste indexini seçiniz\nNOT(0, 1, 2) >>>>"))
