@@ -80,6 +80,29 @@ def example1(x, y, z):
     return example0(x, example0(y, z))
 
 print(example1(20, 15, 21))
-"""
 
+####################Hazır fonksiyonlar###########################
+words = "Bugün.hava.çok.sıcak.değildi."
+wordList = words.split(".") #Kelimeleri .'lardan itibaren parçala
+print(wordList)
+
+
+# Time func
+from datetime import timedelta, timezone
+import datetime as dt
+
+time = dt.datetime.now()
+print(time.month)
+print(time.year)
+print(time.second)
+print(time.hour)
+print("Formatlı hali :", time.strftime("%A/%m/%Y"))
+
+import datetime as dt
+import locale as lc
+
+lc.setlocale(lc.LC_ALL, 'Turkish_Turkey.1254')
+print(time.strftime("%A"))
+
+"""
 

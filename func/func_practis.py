@@ -180,6 +180,33 @@ def example10(number1 = 0, number2 = 0):
 
 print(example10())
 
+
+import time 
+ 
+for i in range(10,0,-1): 
+    print(i) 
+    time.sleep(1)
 """
 
+import datetime as dt
+from tkinter import N
+from unicodedata import name
+
+zaman = dt.datetime.now()
+
+
+def bruh():
+    global bugun
+    global after
+    global toplam
+    toplam = 0
+    bugun = zaman.day
+    after = bugun + 2
+    while after > bugun:
+        user = int(input("Lütfen sayı giriniz"))
+        toplam += user
+        print(toplam) 
+    
+     
+bruh()
 
