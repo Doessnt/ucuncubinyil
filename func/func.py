@@ -104,5 +104,14 @@ import locale as lc
 lc.setlocale(lc.LC_ALL, 'Turkish_Turkey.1254')
 print(time.strftime("%A"))
 
+# Biraz daha hazır fonksiyonlar
+
+test = "bruh"
+
+print(test.capitalize())
+
+test1 = "1"
+print(test1.isdigit())
 """
+
 

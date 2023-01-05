@@ -170,6 +170,8 @@ user = int(input("Lütfen sayı gitiniz\n>>>> "))
 
 print(example9(user))
 
+##################################################
+
 def example10(number1 = 0, number2 = 0):
     if number1 > number2:
         return number1
@@ -180,13 +182,16 @@ def example10(number1 = 0, number2 = 0):
 
 print(example10())
 
+##################################################
 
 import time 
  
-for i in range(10,0,-1): 
+for i in range(5,0,-1): 
     print(i) 
     time.sleep(1)
-"""
+
+
+##################################################
 
 import datetime as dt
 from tkinter import N
@@ -209,4 +214,7 @@ def bruh():
     
      
 bruh()
+"""
+
+
 
