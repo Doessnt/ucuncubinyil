@@ -8,7 +8,7 @@ def git_commit(folder = "",commit_word = "Sahibim buraya bir şey yazmaya üşen
     time.sleep(1)
     print("Dosyalar repoya eklendi\n")
     time.sleep(1)
-    os.system(f'git commit -m "{commit_word}"') # repoya yazılıcak olan bilgilendirme metnini yazdık.
+    os.system(f'git commit -m "{commit_word}"\n\n') # repoya yazılıcak olan bilgilendirme metnini yazdık.
     print(f"Commit edildi. Bilgilendirme metni {commit_word}")
     time.sleep(1)
     os.system("git push") # en son repoya gönderdik.
