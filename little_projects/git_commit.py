@@ -6,11 +6,11 @@ def git_commit(folder = "",commit_word = "Sahibim buraya bir şey yazmaya üşen
     os.getcwd()# ufak kontrol .
     os.system("git add .") #Repoya dosyaları kayıt ettik.
     time.sleep(1)
-    print("Dosyalar repoya eklendi\n")
+    print("Dosyalar repoya eklendi\n") #Bilgilendirmeler 
     time.sleep(1)
     os.system(f'git commit -m "{commit_word}"') # repoya yazılıcak olan bilgilendirme metnini yazdık.
     print("\n\n")
-    print(f"Commit edildi. Bilgilendirme metni {commit_word}")
+    print(f"Commit edildi. Bilgilendirme metni: '{commit_word}'") #Bilgilendirmeler 
     time.sleep(1)
     os.system("git push") # en son repoya gönderdik.
     time.sleep(1)
