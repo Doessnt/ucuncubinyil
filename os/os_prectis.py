@@ -13,14 +13,8 @@ os.mkdir(path)
 os.rename("bruh", newname)
 
 
-forlder_path = "C:\\Test\\test.html"
-for i in range(1, 11):
-    formule = i ** 2
-    folder = open(forlder_path, mode="a+")
-    folder.write("{} sayısının karesi{} \n".format(i, formule))
 
-folder.close()
-"""
+
 
 
 folder_path = "C:\\Test\\test.txt"
@@ -31,3 +25,16 @@ user_input2 = input("Lütfen sayı giriniz")
 for i in range(user_input1, user_input2+1):
     folder.write(str(i) + "\n")
 folder.close()
+
+
+def example():
+    forlder_path = "C:\\Test\\test.txt"
+    for i in range(1, 11):
+        formule = i ** 2
+        folder = open(forlder_path, mode="a+")
+        folder.write("{} sayısının karesi{} \n".format(i, formule))
+
+    folder.close()
+
+speed_code(example())
+"""
