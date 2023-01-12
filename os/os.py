@@ -41,7 +41,7 @@ folder_path = "C:\\Test\\bruh.txt"
 folder = open(folder_path, mode="a+")
 folder.write("Hello World!")
 folder.close()
-"""
+
 
 # Hesap makinesi açma
 import os
@@ -50,3 +50,4 @@ import os
 # what's the pc name
 pcName = os.system("hostname")
 os.system("ipconfig")
+"""
