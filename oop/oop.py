@@ -48,5 +48,82 @@ student1.birtdate = "03/12/2003"
 student1.calssinfo = 3
 student1.kaydet()
 print("\n", student1.name,"\n", student1.birtdate, "\n", student1.calssinfo)
+
+
+### Recap ###
+
+
+class kopkeler():
+    # nitelikleri
+    patiSayisi = 4
+    kuyrukSayisi = 1
+    def __init__(self):
+        self.tuyrengi = str()
+        self.agirlik = 0
+        self.sosyallik = False
+        self.gozrengi = str()
+        self.cins = ""
+        self.havlamasesi = "havhav"
+    def havhav(self):
+        print("\nHavlayan kopek:", self.cins, "\nHavlama sesi:", self.havlamasesi)
+
+rot = kopkeler()
+
+rot.tuyrengi = "siyah"
+rot.gozrengi = "kahve"
+rot.sosyallik = False
+rot.cins = "rot"
+rot.havlamasesi = "HAVHAVHAV!!!!"
+
+#print("ROTUN AĞIRLIĞI: ", rot.agirlik,"ROTUN TUY RENGİ",  rot.tuyrengi, "Sosyelliği", rot.sosyallik)
+
+golden = kopkeler()
+golden.tuyrengi = "sarı-kahve"
+golden.gozrengi = "kahve"
+golden.sosyallik = True
+golden.cins = "Golden"
+golden.havlamasesi = "HavHav"
+
+rot.havhav()
+golden.havhav()
+
+
+class arabalar():
+    def __init__(self, Kapisayisi, Renk, Model, Yil):
+        self.kapiSayisi = Kapisayisi
+        self.renk = Renk
+        self.model = Model
+        self.yil = Yil
+
+sahin = arabalar(4, "Renk", "Sahin", 2023)
+mersedes = arabalar(2, "Siyah", "Mercedes AMG", 2020)
+print(mersedes.model)
 """
+### polimorfizm ###
+# Kalıtım #
+# Miras işte amk anla
+
+
+class workers():
+    def __init__(self, isim, maas, department) -> None:
+        print("Çalışan sınıfın __init__'i")
+        self.isim = isim
+        self.maas = maas
+        self.department = department
+    def show_info(self):
+        print("----- Çalışan bilgileri... -----")
+        print("İsim: {} \n Maaş: {} \n Departman: {}\n ".format(self.isim, self.maas, self.department))
+    def switch_Department(self, new_department):
+        print("Departman GG..")
+        self.department = new_department
+
+class Maneger(workers): # --> Kalıtım bu işte amk al 
+    def do_zam(self, zam):
+        print("Maaşa zam yapılıyor...")
+        self.maas += zam
+
+maneger1 = Maneger("Nesat", 50000, "Yonetici")
+maneger1.do_zam(5000)
+maneger1.show_info()
+
 

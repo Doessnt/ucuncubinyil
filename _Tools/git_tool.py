@@ -5,7 +5,7 @@ def git_configer(user_name = "Hpcodecraftt", user_email="hpcodecraftt@gmail.com"
     try:
         os.system(f'git config --global user.name "{user_name}"')
         time.sleep(2)
-        print("User name girildi şimdi")
+        print("User name girildi")
         time.sleep(2)
         print("Şimdi emailinizi güncelliyorum")
         os.system(f'git config --global user.email "{user_email}"')
@@ -56,8 +56,10 @@ def main_script():
         """))
         if user == 1:
             git_configer()
+            break
         elif user == 2:
             git_commit()
+            break
         elif user == 3:
             break
         else:
