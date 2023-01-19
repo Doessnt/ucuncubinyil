@@ -1,3 +1,4 @@
+import ast
 import os
 """
 class shcool():
@@ -33,3 +34,48 @@ python = ders("Python", "1350", "Doğkan", "14122033")
 
 ders.kaydet(python)
 """
+class car():
+    def bilgi_goster(self):
+        print("HİTLER WAS RİGHT")
+        print("HİTLER WAS RİGHT")
+        
+
+
+
+class Mersedes(car):
+    def __init__(self, isim, model, fiyat) -> None:
+        self.isim = isim
+        self.model = model 
+        self.fiyat = fiyat
+    def bilgi_goster(self):
+        print(f"{self.isim}'in bilgileri")
+        print(f"İsim = {self.isim}, Model = {self.model}, Fiyat = {self.fiyat}")
+
+
+class Aston_Martin(car):
+    def __init__(self, isim, model, fiyat) -> None:
+        self.isim = isim
+        self.model = model 
+        self.fiyat = fiyat
+    def bilgi_goster(self):
+        print(f"{self.isim}'in bilgileri")
+        print(f"İsim = {self.isim}, Model = {self.model}, Fiyat = {self.fiyat}")
+        
+class Honda(car):
+    def __init__(self, isim, model, fiyat) -> None:
+        self.isim = isim
+        self.model = model 
+        self.fiyat = fiyat
+    def bilgi_goster(self):
+        print(f"{self.isim}'in bilgileri")
+        print(f"İsim = {self.isim}, Model = {self.model}, Fiyat = {self.fiyat}")
+
+honda = Honda("Honda", "civic", 500000)
+merso = Mersedes("Mersedes", "AMG", 1000000)
+aston = Aston_Martin("Aston Martin", "db5", 5000000)
+merso.bilgi_goster()
+print("\n")
+honda.bilgi_goster()
+print("\n")
+
+aston.bilgi_goster()

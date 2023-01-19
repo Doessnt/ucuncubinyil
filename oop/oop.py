@@ -98,7 +98,7 @@ class arabalar():
 sahin = arabalar(4, "Renk", "Sahin", 2023)
 mersedes = arabalar(2, "Siyah", "Mercedes AMG", 2020)
 print(mersedes.model)
-"""
+
 ### polimorfizm ###
 # Kalıtım #
 # Miras işte amk anla
@@ -125,5 +125,138 @@ class Maneger(workers): # --> Kalıtım bu işte amk al
 maneger1 = Maneger("Nesat", 50000, "Yonetici")
 maneger1.do_zam(5000)
 maneger1.show_info()
+
+
+
+class Manager():
+    def __init__(self, isim, maas, departman, sorumlu_olduğukişisayısı) -> None:
+        print("__İNİT_ÇALIŞTI")
+        self.isim = isim
+        self.maas = maas
+        self.departman = departman
+        self.kişi_sayisi = sorumlu_olduğukişisayısı
+    def show_info(self):
+        print("Yönetici sınıfına ait bilgiler...")
+        print("isim: {}\n, Maaş: {}\n, Kişi sayısı: {}".format(self.isim, self.maas, self.kişi_sayisi,))
+    
+class workers():
+    def __init__(self, isim, maas, department) -> None:
+        print("Çalışan sınıfın __init__'i")
+        self.isim = isim
+        self.maas = maas
+        self.department = department
+    def show_info(self):
+        super().show_info()
+        print("----- Çalışan bilgileri... -----")
+        print("İsim: {} \n Maaş: {} \n Departman: {}\n ".format(self.isim, self.maas, self.department))
+    def switch_Department(self, new_department):
+        print("Departman GG..")
+        self.department = new_department
+    def do_zam(self, zam):
+        print("Zam yapılıyoeda bi boka yaramıyacak haberin olsun xd")
+        self.maas += zam
+
+
+a = workers("Ali", 15000, "Sanayi")
+a.show_info()
+a.do_zam(15500)
+a.show_info()
+
+
+
+
+b = Manager("Ahmet", 10000, "Yönetici", 25)
+b.show_info()
+
+
+class muhendis():
+    ad = "Sadi" # public bir değişken
+    __soyad = "Kahveci" # priavet bir değişken
+    def ekranayaz(self):
+        print(self.ad) 
+        print(self.__soyad)
+
+muhendiss = muhendis()
+print(muhendiss.__soyad)
+muhendiss.ekranayaz()
+
+
+
+class muhendis():
+    ad = "Sadi" # public bir değişken
+    __soyad = "Kahveci" # priavet bir değişken
+    def __ekranayaz(self): # private fonksiyon
+        print(self.ad) 
+        print(self.__soyad)
+    def __init__(self) -> None:
+        self.__ekranayaz()
+
+muhendiss = muhendis()
+
+
+
+class muhendis():
+    ad = "Sadi" # public bir değişken
+    __soyad = "Kahveci" # priavet bir değişken
+    def __ekranayaz(self): # private fonksiyon
+        print(self.ad) 
+        print(self.__soyad)
+    def __init__(self) -> None:
+        self.__ekranayaz()
+
+class bilgisayar(muhendis):
+    pass 
+
+pcmuhendisi = bilgisayar()
+
+"""
+
+# kapsulleme
+
+
+import re
+
+
+class kapsul():
+    def __init__(self) -> None:
+        self.__ad = "FUCK YOU"
+        self.__soyad = "FUCK YOU TOO"
+    def getIsım(self):
+        return self.__ad
+    def setIsım(self, isim):
+        if(len(isim)>30):
+            print("Çok uzun bir isim girdiniz")
+        else:
+            self.__ad = isim
+
+
+
+kapsull = kapsul()
+print(kapsul.getIsım())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
