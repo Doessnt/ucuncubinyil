@@ -33,7 +33,7 @@ class ders():
 python = ders("Python", "1350", "Doğkan", "14122033") 
 
 ders.kaydet(python)
-"""
+
 class car():
     def bilgi_goster(self):
         print("HİTLER WAS RİGHT")
@@ -79,3 +79,4 @@ honda.bilgi_goster()
 print("\n")
 
 aston.bilgi_goster()
+"""

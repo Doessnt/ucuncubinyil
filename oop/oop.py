@@ -209,12 +209,9 @@ class bilgisayar(muhendis):
 
 pcmuhendisi = bilgisayar()
 
-"""
+
 
 # kapsulleme
-
-
-import re
 
 
 class kapsul():
@@ -233,7 +230,7 @@ class kapsul():
 
 kapsull = kapsul()
 print(kapsul.getIsım())
-
+"""
 
 
 
